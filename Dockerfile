@@ -1,8 +1,6 @@
 FROM centos:7
 #设置时区
 ENV TZ Asia/Shanghai
-RUN cat /usr/share/zoneinfo/Asia/Shanghai > /etc/localtime \
-    &&
 # 添加文件
 RUN cat /usr/share/zoneinfo/Asia/Shanghai > /etc/localtime \
     && mkdir -p /usr/java \
